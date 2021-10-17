@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+.logo {
+    font-size: 35px;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px;
+}
+
+.act .active, .act:hover {
+    border: 1px solid white;
+    transition: 2s;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#about {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+.name {
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+}
+
+.name h1 {
+    text-align: left;
+    width: 200px;
+    font-family: monospace;
+}
+
+.name p {
+    font-size: 25px;
+}
+
+#about img {
+    margin-top: 100px;
+    width: 350px;
+    height: 350px;
+}
+#work {
+    background-color: white;
+	display: grid;
+    justify-content: center;
+    align-items: center;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin: 100px 0;
+}
+#work img {
+    width: 150px;
+	height: 150px;
+	transition: 300px;
+}
+.pictures {
+	margin: 20px auto;
+}
+
+.workForm {
+    background-color: black;
+}
+
+.contact {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.contac h1 {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    margin-left: 80%;
+    text-align: left;
+    width: 200px;
+    font-family: monospace;
+}
+.form {
+    margin-top: 20px;
+    color: white;
+    align-items: center;
+    text-align: left;
+}
+
+.contact .form {
+    margin-left: 10%;
+}
+.form p {
+    font-size: 20px;
+}
+
+.form a {
+    font-size: 20px;
+    color: white;
+}
+
+.form .message {
+    width: 250px;
+    height: 100px;
+}
+.form input {
+    width: 250px;
+    height: 25px;
+}
+.form button {
+    width: 253px;
+    height: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+}
+.thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 90px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+@media only screen and (max-width:1048px) {
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+    .name {
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .name h1 {
+        text-align: left;
+        width: 200px;
+        font-family: monospace;
+    }
+    
+    .name p {
+        font-size: 17px;
+    }
+    
+    #about img {
+        margin-top: 140px;
+        width: 250px;
+        padding: 0 20px;
+        height: 250px;
+        clip-path: circle(50% at 50% 50%);
+    }
+    .contac h1 {
+        margin-top: 17px;
+        color: white;
+        font-size: 30px;
+        margin-left: 80%;
+        text-align: left;
+        width: 200px;
+        font-family: monospace;
+    }
+}
+
+@media only screen and (max-width:909px) {
+    nav {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        background-color: black;
+    }
+
+    nav.logo {
+        font-size: 35px;
+        padding: 0 100px;
+        line-height: 80px;
+    }
+    nav img {
+        margin-left: -55%;
+    }
+    
+    
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+        display: none;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    a .active, a:hover {
+        border: none;
+        color: green;
+    }
+
+    nav #icon {
+        color: white;
+        font-size: 30px;
+        line-height: 80px;
+        float: ;
+        margin-right: 10px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        margin-left: 90%;
+        
+    }
+
+    .show {
+        display: block;
+        z-index: 200;
+    }
+
+    #about {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+    }
+    .name {
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 15px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .name h1 {
+        text-align: left;
+        width: 200px;
+        font-family: monospace;
+        margin-left: 15px;
+    }
+    
+    .name p {
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 15px;
+    }
+    
+    #about img {
+        margin-top: 40px;
+        width: 150px;
+        height: 150px;
+        clip-path: circle(50% at 50% 50%);
+    }
+
+    .contact {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .contac h1 {
+        margin-top: 20px;
+        color: white;
+        font-size: 20px;
+        margin-left: 10%;
+        text-align: left;
+        width: 200px;
+        font-family: monospace;
+    }
+    .contact .form {
+        margin-left: -15%;
+    }
+
+    .form .message {
+        width: 200px;
+        height: 100px;
+    }
+    .form input {
+        width: 200px;
+        height: 25px;
+    }
+    .form button {
+        width: 203px;
+        height: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .thanks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        margin: 90px 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+}
